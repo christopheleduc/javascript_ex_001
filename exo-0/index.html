@@ -10,16 +10,21 @@
         <script type="text/javascript">
 
         /* Section 1 */   
-
+        
+        /* declaration des constantes */
         var name = "Joe";
         var city = 'London';
         var age = 32;
         var isRed = true;
         var isOld = age > 80;
-
+        
+        /* declaration d'une liste */
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
-
+        
+        /* déclaration d'une fonction avec 2 paramètres */
         function info(height, weight) {
+            
+            /* conditions, test pour affichage */
             if (height > 180) {
                 console.log('Vous êtes grand');
             }
@@ -32,33 +37,58 @@
             }
         }
 
+        
+        /* appel de la fonction "info" avec les 2 paramètres (voir au dessus) */
         info(165, 45);
 
+        /* déclaration de variables */
         var myHeight = 175;
         var myWeight = 86;
 
+        /* appel de la fonction "info" avec les 2 variables précédentes en guise de paramètres (voir au dessus) */
         info(myHeight, myWeight);
 
+        /* idem avec modif valeurs des variables direct dans l'appel de la fonction */
         info(myHeight + 15, myWeight - 100);
 
+        /* déclaration d'une fonction avec 1 paramètre */
         function toUpper(variable) {
+            /* la fonction retourne un resultat (voir la fonction 'toUpperCase' dans la Doc!!!) */
             return variable.toUpperCase();
         }
 
+        /* Whaou!!! déclare une variable qui appel la fonction déclaré plus haut en lui passant une variable en paramètre
+        (qui contient une valeur (sorte de code exa ou binaire...)), qui appel une fonction... */
         var upperName = toUpper(name);
 
+        /* Heu, c'est une boucle... qui compte juque... TROIS!!! M'enfin */
         for (i = 0; i < 3; i = i + 1) {
+            /* affiche les 3 valeurs de la liste... */
             console.log(previousJobs[i]);
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquele Joe vit.
+        console.log(city);    
 
         // afficher si Joe est roux ou pas.
+        function isRouxJoe(veritas) {
+
+            if (veritas == true) {
+                    console.log('il l\'est !');
+                } else if ( veritas == false) {
+                    console.log('il ne l\'est pas !')
+                } else {
+                    console.log('What this Hell ???')
+                }
+        }
+
+        isRouxJoe(isRed);
 
         /* Section 3 */
 
+        // Pas besoin de tester "myVariable" n'est pas déclarée ???
         // console.log(myVariable);
 
         </script>
