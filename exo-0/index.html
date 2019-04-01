@@ -11,12 +11,12 @@
 
         /* Section 1 */   
         
-        /* declaration des constantes */
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        /* declaration des variables */
+        var name = "Joe"; // string
+        var city = 'London'; // string
+        var age = 32; //integer
+        var isRed = true; // booléen
+        var isOld = age > 80; // objet ou symbol
         
         /* declaration d'une liste */
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
@@ -25,14 +25,22 @@
         function info(height, weight) {
             
             /* conditions, test pour affichage */
+            /* si la V est plus grande QUE 180 */
             if (height > 180) {
+                // on affiche le message
                 console.log('Vous êtes grand');
             }
+            /* si la V est plus petit QUE 0 */
             if (weight < 0) {
+                // on affiche le message
                 console.log('oups, there is a problem');
+                /* si la V est entre 0 et 180 */
             } else if ( weight < 15) {
+                // on affiche le message
                 console.log('Are you that slim ?')
+                // sinon...
             } else {
+                // on affiche le message
                 console.log('Good !')
             }
         }
