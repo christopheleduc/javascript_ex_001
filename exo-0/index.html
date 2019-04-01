@@ -18,7 +18,7 @@
         var isRed = true; // booléen ou string ?
         var isOld = age > 80; // booléen
         
-        /* declaration d'une liste ou d'un objet vu que cela retourne un objet ou un tableau vu qu'il semble y avoir des clé... */
+        /* declaration d'un tableau vu qu'il semble y avoir des clé... */
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
         
         /* déclaration d'une fonction avec 2 paramètres */
@@ -34,7 +34,7 @@
             if (weight < 0) {
                 // on affiche le message
                 console.log('oups, there is a problem');
-                /* si la V est entre 0 et 180 */
+                /* sinon la V est entre 0 et 15 */
             } else if ( weight < 15) {
                 // on affiche le message
                 console.log('Are you that slim ?')
@@ -65,13 +65,13 @@
             return variable.toUpperCase();
         }
 
-        /* Whaou!!! déclare une variable qui appel la fonction déclaré plus haut en lui passant une variable en paramètre
+        /* Whaou!!! déclare une variable qui stock le resutat de la fonction déclarée plus haut en lui passant une variable en paramètre
         (qui contient une valeur (sorte de code exa ou binaire...)), qui appel une fonction... */
         var upperName = toUpper(name);
 
         /* Heu, c'est une boucle... qui compte juque... TROIS!!! M'enfin */
         for (i = 0; i < 3; i = i + 1) {
-            /* affiche les 3 valeurs de la liste ou de l'objet ou du tableau... */
+            /* affiche la valeur du tableau qui correspond à la clé 'i'... */
             console.log(previousJobs[i]);
         }
 
