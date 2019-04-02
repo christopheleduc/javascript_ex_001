@@ -27,7 +27,7 @@ if(age>18 && isInscrit===true){
 } else if(isInscrit===false || age<18 ){
     console.log('You will race at 12:30 am avec le N° '+raceNumber);
 } else {
-    console.log('No comprendo !!! ');
+    console.log('Go to see the registration desk ');
 }
 
 
